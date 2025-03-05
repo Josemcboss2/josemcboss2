@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con MenciaTech - Tu tienda especializada en componentes y piezas de PC de alta calidad">
+    <meta name="keywords" content="contacto, componentes PC, hardware, atención al cliente, soporte técnico">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Contacto | MenciaTech | Componentes de PC de Alta Calidad</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/stylecontacto2.css">
+    <link rel="stylesheet" href="css/darkmodecontacto.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.imgur.com/mj42urp.jpeg" alt="MenciaTech Logo" height="40">
+                MenciaTech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enlaces.html">Enlaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-sm btn-outline-primary ms-3">
+                            <i class="bi bi-moon-stars"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contacto</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="contact-info-card hover-effect">
+                            <h2>Información de Contacto</h2>
+                            <p class="lead">Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros.</p>
+                            
+                            <div class="contact-item">
+                                <i class="bi bi-geo-alt contact-icon"></i>
+                                <div>
+                                    <h3>Ubicación</h3>
+                                    <p>Av. Tecnología 123, Ciudad</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="bi bi-phone contact-icon"></i>
+                                <div>
+                                    <h3>Teléfono</h3>
+                                    <p>+123 456 7890</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="bi bi-envelope contact-icon"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>info@MenciaTech.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="bi bi-clock contact-icon"></i>
+                                <div>
+                                    <h3>Horario de Atención</h3>
+                                    <p>Lunes a Viernes: 9:00 - 20:00</p>
+                                    <p>Sábados: 10:00 - 14:00</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-social mt-4">
+                                <h3>Síguenos</h3>
+                                <div class="social-links">
+                                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-7">
+                        <div class="contact-form-card hover-effect">
+                            <h2>Envíanos un Mensaje</h2>
+                            <p class="lead">Completa el formulario y te responderemos a la brevedad.</p>
+                            
+                            <form id="contactForm" class="contact-form needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Nombre completo *</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                                        <div class="invalid-feedback">
+                                            Por favor ingresa tu nombre.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com" required>
+                                        <div class="invalid-feedback">
+                                            Por favor ingresa un email válido.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Teléfono</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="Tu teléfono (opcional)">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="subject" class="form-label">Asunto *</label>
+                                        <select class="form-select" id="subject" required>
+                                            <option value="" selected disabled>Selecciona un asunto</option>
+                                            <option value="Consulta general">Consulta general</option>
+                                            <option value="Soporte técnico">Soporte técnico</option>
+                                            <option value="Asesoría">Asesoría para compra</option>
+                                            <option value="Servicio post-venta">Servicio post-venta</option>
+                                            <option value="Reclamación">Reclamación</option>
+                                            <option value="Otro">Otro</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Por favor selecciona un asunto.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensaje *</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                    <div class="invalid-feedback">
+                                        Por favor escribe tu mensaje.
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacyCheck" required>
+                                    <label class="form-check-label" for="privacyCheck">
+                                        He leído y acepto la <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">política de privacidad</a> *
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Debes aceptar nuestra política de privacidad.
+                                    </div>
+                                </div>
+                                
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary btn-lg hover-effect">
+                                        Enviar mensaje <i class="bi bi-send"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title text-center">Encuéntranos</h2>
+                <div class="map-container hover-effect">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1678561234567!5m2!1sen!2sus" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title text-center">Preguntas Frecuentes</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        ¿Cuáles son los métodos de pago aceptados?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Aceptamos tarjetas de crédito/débito (Visa, Mastercard, American Express), PayPal, transferencia bancaria y pago contra reembolso. Para compras empresariales, ofrecemos la posibilidad de financiación.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ¿Cuál es el tiempo de entrega de los productos?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Para productos en stock, el tiempo de entrega es de 24-48 horas laborables para envíos nacionales. Para envíos internacionales, el tiempo estimado es de 3-7 días laborables. Los productos que no están en stock pueden tardar entre 5-15 días dependiendo del proveedor.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿Ofrecen servicio de ensamblaje de PC?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sí, ofrecemos servicio profesional de ensamblaje de PC. Nuestros técnicos cualificados ensamblarán tu equipo con los componentes que elijas, realizando todas las pruebas necesarias para garantizar su óptimo funcionamiento. El servicio incluye instalación del sistema operativo y configuración básica.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        ¿Qué garantía ofrecen con sus productos?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Todos nuestros productos cuentan con la garantía oficial del fabricante, que va desde 1 hasta 5 años dependiendo del componente. Además, ofrecemos 30 días de garantía de satisfacción en la que puedes devolver el producto si no cumple con tus expectativas.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        ¿Ofrecen asesoría técnica personalizada?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sí, contamos con un equipo de expertos que te asesorarán en la elección de componentes según tus necesidades y presupuesto. Puedes solicitar asesoría a través del formulario de contacto, vía telefónica o visitando nuestra tienda física.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container text-center">
+                <h2>¿Necesitas una respuesta inmediata?</h2>
+                <p class="lead">Nuestro equipo de soporte está disponible vía chat en vivo durante el horario comercial.</p>
+                <button class="btn btn-light btn-lg mt-3 hover-effect" id="openChatBtn">
+                    <i class="bi bi-chat-dots"></i> Iniciar chat en vivo
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <h3>MenciaTech</h3>
+                        <p>Tu tienda especializada en componentes y soluciones para PC gaming y profesional.</p>
+                        <p class="footer-slogan">"Potencia tu experiencia digital con componentes de calidad"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h3>Enlaces rápidos</h3>
+                        <ul>
+                            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Inicio</a></li>
+                            <li><a href="productos.html"><i class="bi bi-chevron-right"></i> Productos</a></li>
+                            <li><a href="articulos.html"><i class="bi bi-chevron-right"></i> Artículos</a></li>
+                            <li><a href="enlaces.html"><i class="bi bi-chevron-right"></i> Enlaces</a></li>
+                            <li><a href="contacto.html"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal"><i class="bi bi-chevron-right"></i> Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h3>Contáctanos</h3>
+                        <p><i class="bi bi-geo-alt"></i> Av. Tecnología 123, Ciudad</p>
+                        <p><i class="bi bi-phone"></i> +123 456 7890</p>
+                        <p><i class="bi bi-envelope"></i> info@MenciaTech.com</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    &copy; <span id="currentYear">2025</span> <strong>MenciaTech</strong>. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Política de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Política de Privacidad de MenciaTech</h2>
+                    <p>Última actualización: Febrero 2025</p>
+                    
+                    <h3>1. Información que recopilamos</h3>
+                    <p>En MenciaTech, recopilamos diferentes tipos de información para proporcionar y mejorar nuestros servicios. Los datos que podemos recopilar incluyen:</p>
+                    <ul>
+                        <li>Información personal: nombre, dirección de correo electrónico, número de teléfono, dirección postal.</li>
+                        <li>Información de pago: datos de tarjetas de crédito, información bancaria.</li>
+                        <li>Información del dispositivo: dirección IP, tipo de navegador, sistema operativo.</li>
+                        <li>Datos de uso: páginas visitadas, productos vistos, tiempo de navegación.</li>
+                    </ul>
+                    
+                    <h3>2. Uso de la información</h3>
+                    <p>Utilizamos la información recopilada para:</p>
+                    <ul>
+                        <li>Procesar pedidos y transacciones.</li>
+                        <li>Proporcionar y mantener nuestros servicios.</li>
+                        <li>Mejorar nuestra página web y experiencia del usuario.</li>
+                        <li>Enviar comunicaciones de marketing (con su consentimiento).</li>
+                        <li>Cumplir con obligaciones legales.</li>
+                    </ul>
+                    
+                    <h3>3. Protección de datos</h3>
+                    <p>Nos comprometemos a proteger sus datos personales y hemos implementado medidas de seguridad físicas, técnicas y administrativas para salvaguardar la información que recopilamos.</p>
+                    
+                    <h3>4. Compartir información</h3>
+                    <p>Podemos compartir su información con:</p>
+                    <ul>
+                        <li>Proveedores de servicios que nos ayudan a operar nuestro negocio.</li>
+                        <li>Autoridades cuando sea requerido por ley.</li>
+                        <li>Socios comerciales, con su consentimiento previo.</li>
+                    </ul>
+                    
+                    <h3>5. Sus derechos</h3>
+                    <p>Usted tiene derecho a:</p>
+                    <ul>
+                        <li>Acceder a sus datos personales.</li>
+                        <li>Corregir información inexacta.</li>
+                        <li>Eliminar sus datos bajo ciertas circunstancias.</li>
+                        <li>Oponerse al procesamiento de sus datos.</li>
+                        <li>Retirar su consentimiento en cualquier momento.</li>
+                    </ul>
+                    
+                    <h3>6. Cookies</h3>
+                    <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Puede configurar su navegador para rechazar todas las cookies o para indicar cuándo se envía una cookie.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Submit Success Modal -->
+    <div class="modal fade" id="formSuccessModal" tabindex="-1" aria-labelledby="formSuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formSuccessModalLabel">¡Mensaje enviado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+                        <p class="mt-3">Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo a la brevedad posible.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Popup (Simulation) -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <h4><i class="bi bi-chat-dots"></i> Chat en vivo</h4>
+            <button id="closeChatBtn" class="btn-close"></button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message system">
+                <p>Bienvenido al chat de soporte de MenciaTech. ¿En qué podemos ayudarte hoy?</p>
+                <span class="chat-time">Ahora</span>
+            </div>
+            <div id="chatMessages"></div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chatInput" class="form-control" placeholder="Escribe tu mensaje...">
+            <button id="sendChatBtn" class="btn btn-primary">
+                <i class="bi bi-send"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/scriptcontacto2.js"></script>
+</body>
+</html>
+<!-- End of contacto.html -->
+

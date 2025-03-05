@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artículos de tecnología y componentes de PC - MenciaTech">
+    <meta name="keywords" content="artículos tecnología, componentes PC, guías hardware, blog tecnológico">
+    <link rel="icon" href="https://i.imgur.com/mj42urp.jpeg" type="image/x-icon">
+    <title>Artículos | MenciaTech</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.imgur.com/mj42urp.jpeg" alt="MenciaTech Logo" height="40">
+                MenciaTech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enlaces.html">Enlaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-sm btn-outline-primary ms-3">
+                            <i class="bi bi-moon-stars"></i>
+                            <i class="bi bi-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Articles Header -->
+        <section class="articles-header py-5">
+            <div class="container">
+                <h1 class="section-title text-center">Últimos Artículos Tecnológicos</h1>
+                <p class="lead text-center">Descubre las últimas tendencias, análisis y guías sobre tecnología y componentes de PC</p>
+            </div>
+        </section>
+
+        <!-- Featured Articles -->
+        <section class="featured-articles py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <article class="article-detailed mb-5">
+                            <img src="img/article-1.jpg" alt="Procesadores 2025" class="img-fluid mb-4 rounded">
+                            <h2>Guía de compra: Procesadores 2025</h2>
+                            <p class="article-date"><i class="bi bi-calendar"></i> 15 de febrero, 2025</p>
+                            <p>En este artículo completo, analizamos los mejores procesadores del mercado para diferentes necesidades. Desde gaming de alto rendimiento hasta estaciones de trabajo profesionales, te ayudamos a tomar la mejor decisión para tu próxima configuración.</p>
+                            <a href="#" class="btn btn-primary">Leer artículo completo</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="article-card hover-effect mb-4">
+                            <img src="img/article-2.jpg" alt="Tarjetas gráficas" class="img-fluid article-image">
+                            <div class="article-content">
+                                <h3>Tarjetas gráficas: ¿AMD o NVIDIA?</h3>
+                                <p class="article-date"><i class="bi bi-calendar"></i> 10 de febrero, 2025</p>
+                                <p>Análisis comparativo entre las últimas generaciones de tarjetas gráficas de AMD y NVIDIA...</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Leer más</a>
+                            </div>
+                        </div>
+                        <div class="article-card hover-effect">
+                            <img src="img/article-3.jpg" alt="Refrigeración" class="img-fluid article-image">
+                            <div class="article-content">
+                                <h3>Refrigeración líquida vs. aire</h3>
+                                <p class="article-date"><i class="bi bi-calendar"></i> 5 de febrero, 2025</p>
+                                <p>Ventajas y desventajas de cada sistema de refrigeración para tu PC gaming o workstation...</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Articles Grid -->
+        <section class="all-articles py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Todos los Artículos</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="article-card hover-effect">
+                            <img src="img/article-4.jpg" alt="SSD vs HDD" class="img-fluid article-image">
+                            <div class="article-content">
+                                <h3>SSD vs HDD: Guía definitiva de almacenamiento</h3>
+                                <p class="article-date"><i class="bi bi-calendar"></i> 1 de febrero, 2025</p>
+                                <p>Descubre las diferencias entre unidades de estado sólido y discos duros tradicionales...</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="article-card hover-effect">
+                            <img src="img/article-5.jpg" alt="Overclocking" class="img-fluid article-image">
+                            <div class="article-content">
+                                <h3>Overclocking: Mejora el rendimiento de tu PC</h3>
+                                <p class="article-date"><i class="bi bi-calendar"></i> 25 de enero, 2025</p>
+                                <p>Aprende técnicas seguras para aumentar la velocidad de tu procesador y tarjeta gráfica...</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="article-card hover-effect">
+                            <img src="img/article-6.jpg" alt="Fuentes de poder" class="img-fluid article-image">
+                            <div class="article-content">
+                                <h3>Guía de fuentes de poder: Eficiencia y calidad</h3>
+                                <p class="article-date"><i class="bi bi-calendar"></i> 15 de enero, 2025</p>
+                                <p>Cómo elegir la fuente de poder perfecta para tu configuración de PC...</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <h3>MenciaTech</h3>
+                        <p>Tu tienda especializada en componentes y soluciones para PC gaming y profesional.</p>
+                        <p class="footer-slogan">"Potencia tu experiencia digital con componentes de calidad"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h3>Enlaces rápidos</h3>
+                        <ul>
+                            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Inicio</a></li>
+                            <li><a href="productos.html"><i class="bi bi-chevron-right"></i> Productos</a></li>
+                            <li><a href="articulos.html"><i class="bi bi-chevron-right"></i> Artículos</a></li>
+                            <li><a href="enlaces.html"><i class="bi bi-chevron-right"></i> Enlaces</a></li>
+                            <li><a href="contacto.html"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h3>Contáctanos</h3>
+                        <p><i class="bi bi-geo-alt"></i> Av. Tecnología 123, Ciudad</p>
+                        <p><i class="bi bi-phone"></i> +123 456 7890</p>
+                        <p><i class="bi bi-envelope"></i> info@techzone.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    &copy; <span id="currentYear">2025</span> <strong>MenciaTech</strong>. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

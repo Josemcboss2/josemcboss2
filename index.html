@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechZone - Tu tienda especializada en componentes y piezas de PC de alta calidad">
+    <meta name="keywords" content="componentes PC, hardware, procesadores, tarjetas gráficas, placas base, memoria RAM, almacenamiento, periféricos">
+    <link rel="icon" href="https://i.imgur.com/mj42urp.jpeg" type="image/x-icon">
+    <title>MenciaTech | Componentes de PC de Alta Calidad</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.imgur.com/mj42urp.jpeg" alt="MenciaTech Logo" height="40">
+                MenciaTech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articulos.html">Artículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enlaces.html">Enlaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-sm btn-outline-primary ms-3">
+                            <i class="bi bi-moon-stars"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <header class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://lian-li.com/wp-content/uploads/2023/09/O11D-EVO-XL.webp" class="d-block w-100" alt="Componentes de PC de alta gama">
+                    <div class="carousel-caption">
+                        <h1>Componentes de PC de Alta Gama</h1>
+                        <p>Las mejores marcas y tecnología para tu equipo</p>
+                        <button class="btn btn-primary btn-lg" onclick="showWelcomeModal()">Ver ofertas</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lian-li.com/wp-content/uploads/2023/09/O11D-EVO-XL-000.webp" class="d-block w-100" alt="Configuraciones para Gaming">
+                    <div class="carousel-caption">
+                        <h1>Configuraciones para Gaming</h1>
+                        <p>Optimiza tu experiencia con nuestras soluciones personalizadas</p>
+                        <button class="btn btn-primary btn-lg hover-effect">Explorar</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lian-li.com/wp-content/uploads/2023/09/O11D-EVO-XL-001.webp" class="d-block w-100" alt="Asesoría Profesional">
+                    <div class="carousel-caption">
+                        <h1>Asesoría Profesional</h1>
+                        <p>Te ayudamos a elegir los componentes ideales para tus necesidades</p>
+                        <button class="btn btn-primary btn-lg">Contáctanos</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://www.datocms-assets.com/34299/1690917454-gaming-pc-category-hero-primary-sm.png" alt="Tienda TechZone" class="img-fluid rounded shadow-lg">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h2 class="section-title">¿Quiénes somos?</h2>
+                            <p class="lead">Tu destino confiable para componentes de PC de alta calidad.</p>
+                            <p>En MenciaTech, nos apasiona la tecnología y estamos comprometidos a ofrecer los mejores componentes para PC a precios competitivos. Con más de 10 años de experiencia en el mercado, nos hemos convertido en referentes del sector tecnológico, brindando asesoría especializada y soluciones personalizadas para cada cliente.</p>
+                            <div class="mt-4">
+                                <h3>Nuestro lema:</h3>
+                                <blockquote class="blockquote">
+                                    <p>"Potencia tu experiencia digital con componentes de calidad"</p>
+                                </blockquote>
+                            </div>
+                            <button class="btn btn-outline-primary hover-effect mt-3" id="showServicesBtn">Descubre nuestros servicios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <h2 class="section-title text-center">Nuestros Servicios</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card hover-effect">
+                            <i class="bi bi-pc-display service-icon"></i>
+                            <h3>Venta de Componentes</h3>
+                            <p>Amplio catálogo con las mejores marcas del mercado.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card hover-effect">
+                            <i class="bi bi-tools service-icon"></i>
+                            <h3>Ensamblaje de PC</h3>
+                            <p>Armamos tu PC gaming o de trabajo según tus necesidades.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card hover-effect">
+                            <i class="bi bi-headset service-icon"></i>
+                            <h3>Soporte Técnico</h3>
+                            <p>Resolvemos tus dudas y problemas con atención personalizada.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card hover-effect">
+                            <i class="bi bi-speedometer2 service-icon"></i>
+                            <h3>Optimización</h3>
+                            <p>Mejoramos el rendimiento de tu equipo existente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="products-section" id="featured-products">
+            <div class="container">
+                <h2 class="section-title text-center">Productos Destacados</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="product-card hover-effect">
+                            <div class="product-badge">Más vendido</div>
+                            <img src="img/product-1.jpg" alt="Procesador AMD Ryzen" class="img-fluid product-image">
+                            <div class="product-info">
+                                <h3>AMD Ryzen 9 5900X</h3>
+                                <p class="product-description">Procesador de 12 núcleos y 24 hilos para gaming y estaciones de trabajo.</p>
+                                <div class="product-price">
+                                    <span class="price">$499.99</span>
+                                    <span class="old-price">$549.99</span>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="showProductModal('AMD Ryzen 9 5900X')">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="product-card hover-effect">
+                            <div class="product-badge bg-success">Nuevo</div>
+                            <img src="img/product-2.jpg" alt="Tarjeta Gráfica NVIDIA" class="img-fluid product-image">
+                            <div class="product-info">
+                                <h3>NVIDIA RTX 4080</h3>
+                                <p class="product-description">Tarjeta gráfica de última generación para gaming en 4K y raytracing.</p>
+                                <div class="product-price">
+                                    <span class="price">$1,199.99</span>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="showProductModal('NVIDIA RTX 4080')">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="product-card hover-effect">
+                            <div class="product-badge bg-danger">Oferta</div>
+                            <img src="img/product-3.jpg" alt="Placa Base ASUS" class="img-fluid product-image">
+                            <div class="product-info">
+                                <h3>ASUS ROG Strix Z690-E</h3>
+                                <p class="product-description">Placa base gaming con WiFi 6E, PCIe 5.0 y soporte para DDR5.</p>
+                                <div class="product-price">
+                                    <span class="price">$379.99</span>
+                                    <span class="old-price">$429.99</span>
+                                </div>
+                                <button class="btn btn-primary mt-3 w-100" onclick="showProductModal('ASUS ROG Strix Z690-E')">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="productos.html" class="btn btn-primary btn-lg">Ver catálogo completo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="section-title text-center">Categorías de Productos</h2>
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-card hover-effect">
+                            <i class="bi bi-cpu category-icon"></i>
+                            <h3>Procesadores</h3>
+                            <a href="productos.html#procesadores" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-card hover-effect">
+                            <i class="bi bi-gpu-card category-icon"></i>
+                            <h3>Tarjetas Gráficas</h3>
+                            <a href="productos.html#tarjetas-graficas" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-card hover-effect">
+                            <i class="bi bi-motherboard category-icon"></i>
+                            <h3>Placas Base</h3>
+                            <a href="productos.html#placas-base" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-card hover-effect">
+                            <i class="bi bi-memory category-icon"></i>
+                            <h3>Memoria RAM</h3>
+                            <a href="productos.html#memoria-ram" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-card hover-effect">
+                            <i class="bi bi-device-hdd category-icon"></i>
+                            <h3>Almacenamiento</h3>
+                            <a href="productos.html#almacenamiento" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-card hover-effect">
+                            <i class="bi bi-lightning-charge category-icon"></i>
+                            <h3>Fuentes de Poder</h3>
+                            <a href="productos.html#fuentes-poder" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Articles -->
+        <section class="articles-section" id="latest-articles">
+            <div class="container">
+                <h2 class="section-title text-center">Últimos Artículos</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="article-card hover-effect">
+                            <img src="img/article-1.jpg" alt="Artículo sobre procesadores" class="img-fluid article-image">
+                            <div class="article-content">
+                                <h3>Guía de compra: Procesadores 2025</h3>
+                                <p class="article-date"><i class="bi bi-calendar"></i> 15 de febrero, 2025</p>
+                                <p>Todo lo que necesitas saber para elegir el procesador ideal según tus necesidades y presupuesto...</p>
+                                <a href="articulos.html" class="btn btn-sm btn-outline-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="article-card hover-effect">
+                            <img src="img/article-2.jpg" alt="Artículo sobre tarjetas gráficas" class="img-fluid article-image">
+                            <div class="article-content">
+                                <h3>Tarjetas gráficas: ¿AMD o NVIDIA?</h3>
+                                <p class="article-date"><i class="bi bi-calendar"></i> 10 de febrero, 2025</p>
+                                <p>Análisis comparativo entre las últimas generaciones de tarjetas gráficas de AMD y NVIDIA...</p>
+                                <a href="articulos.html" class="btn btn-sm btn-outline-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="article-card hover-effect">
+                            <img src="img/article-3.jpg" alt="Artículo sobre refrigeración" class="img-fluid article-image">
+                            <div class="article-content">
+                                <h3>Refrigeración líquida vs. aire</h3>
+                                <p class="article-date"><i class="bi bi-calendar"></i> 5 de febrero, 2025</p>
+                                <p>Ventajas y desventajas de cada sistema de refrigeración para tu PC gaming o workstation...</p>
+                                <a href="articulos.html" class="btn btn-sm btn-outline-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="articulos.html" class="btn btn-primary btn-lg">Ver todos los artículos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title text-center">Opiniones de Nuestros Clientes</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-card hover-effect">
+                            <div class="testimonial-content">
+                                <i class="bi bi-quote quote-icon"></i>
+                                <p>Excelente servicio y asesoría. Me ayudaron a elegir los componentes perfectos para mi PC gaming y el resultado superó mis expectativas.</p>
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="img/client-1.jpg" alt="Cliente" class="testimonial-img">
+                                <div>
+                                    <h4>Carlos Ramírez</h4>
+                                    <p>Cliente desde 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card hover-effect">
+                            <div class="testimonial-content">
+                                <i class="bi bi-quote quote-icon"></i>
+                                <p>Los mejores precios del mercado y una atención personalizada que no se encuentra en las grandes tiendas. Siempre encuentro lo que necesito.</p>
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="img/client-2.jpg" alt="Cliente" class="testimonial-img">
+                                <div>
+                                    <h4>Laura Méndez</h4>
+                                    <p>Cliente desde 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card hover-effect">
+                            <div class="testimonial-content">
+                                <i class="bi bi-quote quote-icon"></i>
+                                <p>El servicio de ensamblaje fue impecable. Mi PC funciona perfectamente desde el primer día, y el soporte post-venta ha sido excepcional.</p>
+                                <div class="testimonial-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="img/client-3.jpg" alt="Cliente" class="testimonial-img">
+                                <div>
+                                    <h4>Miguel Ángel Torres</h4>
+                                    <p>Cliente desde 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container text-center">
+                <h2>¿Listo para actualizar tu PC?</h2>
+                <p class="lead">Contáctanos hoy mismo y obtén asesoría personalizada.</p>
+                <a href="contacto.html" class="btn btn-light btn-lg mt-3 hover-effect">Contactar ahora</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <h3>TechZone</h3>
+                        <p>Tu tienda especializada en componentes y soluciones para PC gaming y profesional.</p>
+                        <p class="footer-slogan">"Potencia tu experiencia digital con componentes de calidad"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h3>Enlaces rápidos</h3>
+                        <ul>
+                            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Inicio</a></li>
+                            <li><a href="productos.html"><i class="bi bi-chevron-right"></i> Productos</a></li>
+                            <li><a href="articulos.html"><i class="bi bi-chevron-right"></i> Artículos</a></li>
+                            <li><a href="enlaces.html"><i class="bi bi-chevron-right"></i> Enlaces</a></li>
+                            <li><a href="contacto.html"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal"><i class="bi bi-chevron-right"></i> Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h3>Contáctanos</h3>
+                        <p><i class="bi bi-geo-alt"></i> Av. Tecnología 123, Ciudad</p>
+                        <p><i class="bi bi-phone"></i> +123 456 7890</p>
+                        <p><i class="bi bi-envelope"></i> info@techzone.com</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    &copy; <span id="currentYear">2025</span> <strong>TechZone</strong>. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Política de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Política de Privacidad de TechZone</h2>
+                    <p>Última actualización: Febrero 2025</p>
+                    
+                    <h3>1. Información que recopilamos</h3>
+                    <p>En TechZone, recopilamos diferentes tipos de información para proporcionar y mejorar nuestros servicios. Los datos que podemos recopilar incluyen:</p>
+                    <ul>
+                        <li>Información personal: nombre, dirección de correo electrónico, número de teléfono, dirección postal.</li>
+                        <li>Información de pago: datos de tarjetas de crédito, información bancaria.</li>
+                        <li>Información del dispositivo: dirección IP, tipo de navegador, sistema operativo.</li>
+                        <li>Datos de uso: páginas visitadas, productos vistos, tiempo de navegación.</li>
+                    </ul>
+                    
+                    <h3>2. Uso de la información</h3>
+                    <p>Utilizamos la información recopilada para:</p>
+                    <ul>
+                        <li>Procesar pedidos y transacciones.</li>
+                        <li>Proporcionar y mantener nuestros servicios.</li>
+                        <li>Mejorar nuestra página web y experiencia del usuario.</li>
+                        <li>Enviar comunicaciones de marketing (con su consentimiento).</li>
+                        <li>Cumplir con obligaciones legales.</li>
+                    </ul>
+                    
+                    <h3>3. Protección de datos</h3>
+                    <p>Nos comprometemos a proteger sus datos personales y hemos implementado medidas de seguridad físicas, técnicas y administrativas para salvaguardar la información que recopilamos.</p>
+                    
+                    <h3>4. Compartir información</h3>
+                    <p>Podemos compartir su información con:</p>
+                    <ul>
+                        <li>Proveedores de servicios que nos ayudan a operar nuestro negocio.</li>
+                        <li>Autoridades cuando sea requerido por ley.</li>
+                        <li>Socios comerciales, con su consentimiento previo.</li>
+                    </ul>
+                    
+                    <h3>5. Sus derechos</h3>
+                    <p>Usted tiene derecho a:</p>
+                    <ul>
+                        <li>Acceder a sus datos personales.</li>
+                        <li>Corregir información inexacta.</li>
+                        <li>Eliminar sus datos bajo ciertas circunstancias.</li>
+                        <li>Oponerse al procesamiento de sus datos.</li>
+                        <li>Retirar su consentimiento en cualquier momento.</li>
+                    </ul>
+                    
+                    <h3>6. Cookies</h3>
+                    <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Puede configurar su navegador para rechazar todas las cookies o para indicar cuándo se envía una cookie.</p>
+                    <!-- Bootstrap JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="js/main.js"></script>
