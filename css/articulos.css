@@ -240,13 +240,20 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--box-shadow);
     overflow: hidden;
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-    height: 100%;
+    height: fit-content;
     display: flex;
+    
     flex-direction: column;
+    padding: 10px; /* Reducir el padding */
+    
 }
 
 [data-theme="dark"] .article-card {
     background-color: #2c3e50;
+}
+
+.article-content p {
+    font-size: 0.8rem; /* Reducir el tamaño del texto */
 }
 
 .article-card:hover {

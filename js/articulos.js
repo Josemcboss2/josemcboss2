@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'articulo-5': {
             titulo: 'Overclocking: Mejora el rendimiento de tu PC',
             fecha: '25 de enero, 2025',
-            imagen: 'img/article-5.jpg',
+            imagen: 'https://www.lacuracaonline.com/media/wysiwyg/Blog/CuerpoArticulo/shutterstock_2154436615.jpg',
             contenido: `<p>Aprende técnicas seguras para aumentar la velocidad de tu procesador y tarjeta gráfica sin comprometer la estabilidad del sistema.</p>
                         <h4>¿Qué es el overclocking?</h4>
                         <p>El overclocking consiste en aumentar la frecuencia de funcionamiento de un componente por encima de los valores establecidos por el fabricante.</p>
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'articulo-6': {
             titulo: 'Guía de fuentes de poder: Eficiencia y calidad',
             fecha: '15 de enero, 2025',
-            imagen: 'img/article-6.jpg',
+            imagen: 'https://i.ytimg.com/vi/krRs18m6fLg/maxresdefault.jpg',
             contenido: `<p>Cómo elegir la fuente de poder perfecta para tu configuración de PC gaming o workstation.</p>
                         <h4>Potencia necesaria</h4>
                         <p>Calcula el consumo total de todos tus componentes y añade un margen del 20-30% para futuras ampliaciones y picos de consumo.</p>
