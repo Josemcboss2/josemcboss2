@@ -37,6 +37,7 @@ body {
 
 [data-theme="dark"] body {
     background-color: #1a1a1a;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
