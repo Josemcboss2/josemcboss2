@@ -209,3 +209,70 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const filterCheckboxes = document.querySelectorAll('.filter-sidebar .form-check-input');
+    const applyFilterBtn = document.querySelector('.filter-sidebar .btn-primary');
+    const resetFilterBtn = document.querySelector('.filter-sidebar .btn-outline-secondary');
+    const priceRange = document.getElementById('priceRange');
+    const products = document.querySelectorAll('.product-card'); // Asegurar que esta clase es la correcta
+
+    function filterProducts() {
+        let activeCategories = [];
+        let activeBrands = [];
+        let maxPrice = priceRange ? parseFloat(priceRange.value) : Infinity;
+
+        filterCheckboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                if (checkbox.id.startsWith('cat')) {
+                    activeCategories.push(checkbox.id.replace('cat', '').toLowerCase());
+                } else if (checkbox.id.startsWith('brand')) {
+                    activeBrands.push(checkbox.id.replace('brand', '').toLowerCase());
+                }
+            }
+        });
+
+        console.log("Categorías seleccionadas:", activeCategories);
+        console.log("Marcas seleccionadas:", activeBrands);
+
+        products.forEach(product => {
+            const productCategory = product.dataset.category?.toLowerCase() || "";
+            const productName = product.querySelector('h4')?.textContent.toLowerCase() || "";
+            const productPrice = parseFloat(product.querySelector('.price')?.textContent.replace('$', '') || 0);
+
+            console.log(`Producto: ${productName}, Categoría: ${productCategory}, Precio: ${productPrice}`);
+
+            const matchesCategory = activeCategories.length === 0 || activeCategories.includes(productCategory);
+            const matchesBrand = activeBrands.length === 0 || activeBrands.some(brand => productName.includes(brand));
+            const matchesPrice = productPrice <= maxPrice;
+
+            // Mostrar u ocultar el producto
+            if (matchesCategory && matchesBrand && matchesPrice) {
+                product.style.display = 'flex';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+
+        // Ocultar categorías vacías
+        document.querySelectorAll('.category-section').forEach(section => {
+            const visibleProducts = section.querySelectorAll('.product-card:not([style*="display: none"])');
+            section.style.display = visibleProducts.length > 0 ? 'block' : 'none';
+        });
+    }
+
+    if (applyFilterBtn) {
+        applyFilterBtn.addEventListener('click', filterProducts);
+    }
+
+    if (resetFilterBtn) {
+        resetFilterBtn.addEventListener('click', function() {
+            filterCheckboxes.forEach(checkbox => checkbox.checked = false);
+            if (priceRange) priceRange.value = priceRange.max;
+            filterProducts();
+        });
+    }
+
+    if (priceRange) {
+        priceRange.addEventListener('input', filterProducts);
+    }
+});
