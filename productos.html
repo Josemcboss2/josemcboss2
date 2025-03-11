@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TechZone - Catálogo completo de componentes y piezas de PC de alta calidad">
+    <meta name="description" content="MenciaTech - Catálogo completo de componentes y piezas de PC de alta calidad">
     <meta name="keywords" content="componentes PC, hardware, procesadores, tarjetas gráficas, placas base, memoria RAM, almacenamiento, periféricos">
     <meta name="author" content="Tu Nombre">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="TechZone - Productos y Componentes PC">
     <meta property="og:description" content="Explora nuestra amplia gama de componentes para PC y encuentra lo que necesitas">
     <meta property="og:image" content="img/logo.png">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -59,10 +58,36 @@
                             <i class="bi bi-sun"></i>
                         </button>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="bi bi-cart"></i>
+                            <span id="cartCounter">0</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Modal del carrito -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul id="cartItems" class="list-group">
+                    <!-- Los productos del carrito se agregarán aquí dinámicamente -->
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Page Header -->
     <header class="page-header">
