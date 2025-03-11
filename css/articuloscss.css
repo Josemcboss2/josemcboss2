@@ -1,0 +1,64 @@
+/* Estilos para el modal de artículos */
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: var(--bs-primary);
+}
+
+#modalImagen {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#modalContenido h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--bs-primary);
+}
+
+.modal-body .text-muted {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode .modal-content {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+body.dark-mode .modal-title,
+body.dark-mode #modalContenido h4 {
+    color: var(--bs-primary);
+}
