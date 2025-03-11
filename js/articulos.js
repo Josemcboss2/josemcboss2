@@ -142,26 +142,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Dark mode toggle functionality
     const darkModeToggle = document.getElementById("darkModeToggle");
     if (darkModeToggle) {
-        darkModeToggle.addEventListener("click", function() {
+        darkModeToggle.addEventListener('click', function() {
             const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            
             updateDarkModeIcon(newTheme);
         });
     }
-    
-    // Function to update dark mode icon
+
     function updateDarkModeIcon(theme) {
-        const darkModeToggle = document.getElementById("darkModeToggle");
-        if (darkModeToggle) {
-            if (theme === 'dark') {
-                darkModeToggle.innerHTML = '<i class="bi bi-sun"></i>';
-            } else {
-                darkModeToggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
-            }
+        const darkModeIcon = document.getElementById("darkModeIcon");
+        if (darkModeIcon) {
+            darkModeIcon.classList.toggle("bi-sun", theme === 'dark');
+            darkModeIcon.classList.toggle("bi-moon", theme === 'light');
         }
     }
 });
