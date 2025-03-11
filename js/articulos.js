@@ -1,5 +1,6 @@
 // Esperar a que el documento esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
+
     // Datos de los artículos (simulados - en una implementación real podrían venir de una base de datos)
     const articulos = {
         'articulo-1': {
@@ -106,6 +107,17 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     `;
     document.body.insertAdjacentHTML('beforeend', modalHTML);
+      // Cambiar estilo del navbar al hacer scroll
+      const navbar = document.getElementById('mainNav');
+      if (navbar) {
+          window.addEventListener('scroll', function() {
+              if (window.scrollY > 50) {
+                  navbar.classList.add('navbar-scrolled');
+              } else {
+                  navbar.classList.remove('navbar-scrolled');
+              }
+          });
+      }
 
     // Obtener todos los botones "Leer más" y "Leer artículo completo"
     const botonesLeerMas = document.querySelectorAll('.article-card .btn-outline-primary, .article-detailed .btn-primary');
