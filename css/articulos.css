@@ -210,6 +210,21 @@ body {
     background-color: rgba(79, 163, 209, 0.2);
 }
 
+/* Estilos para el Footer */
+footer {
+    background-color: #375a7f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo del Footer en modo oscuro */
+[data-theme="dark"] footer {
+    background-color: #375a7f; 
+    color: white;
+}
+
 /* Estilos responsivos */
 @media (max-width: 991.98px) {
     .article-detailed img {
