@@ -2,18 +2,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Datos de los artículos (simulados - en una implementación real podrían venir de una base de datos)
     const articulos = {
-        'articulo-1': {
-            titulo: 'Guía de compra: Procesadores 2025',
-            fecha: '15 de febrero, 2025',
-            imagen: '<img src="https://i.ytimg.com/vi/MPXPwSmvInI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDBNtJ2EDrf8czsCvZxq1g-0ebKbg" alt="Procesadores 2025" class="img-fluid mb-4 rounded">',
-            contenido: `<p>En este artículo completo, analizamos los mejores procesadores del mercado para diferentes necesidades. Desde gaming de alto rendimiento hasta estaciones de trabajo profesionales, te ayudamos a tomar la mejor decisión para tu próxima configuración.</p>
-                        <h4>Procesadores para Gaming</h4>
-                        <p>Para gamers, recomendamos procesadores con alto rendimiento en un solo núcleo y frecuencias elevadas. Los últimos modelos de Intel Core i9 y AMD Ryzen 9 ofrecen un rendimiento excepcional para juegos de última generación.</p>
-                        <h4>Procesadores para Workstations</h4>
-                        <p>Si necesitas una estación de trabajo para renderizado 3D, edición de video o compilación de código, los procesadores con mayor número de núcleos como AMD Threadripper o Intel Xeon serán tu mejor opción.</p>
-                        <h4>Mejor relación calidad-precio</h4>
-                        <p>Para usuarios con presupuesto limitado, los procesadores de gama media como AMD Ryzen 5 o Intel Core i5 ofrecen un rendimiento excepcional sin vaciar tu bolsillo.</p>`
-        },
+'articulo-1': {
+    titulo: 'Guía de compra: Procesadores 2025',
+    fecha: '15 de febrero, 2025',
+    imagen: 'https://i.ytimg.com/vi/MPXPwSmvInI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDBNtJ2EDrf8czsCvZxq1g-0ebKbg',
+    contenido: `<p>En este artículo completo, analizamos los mejores procesadores del mercado para diferentes necesidades. Desde gaming de alto rendimiento hasta estaciones de trabajo profesionales, te ayudamos a tomar la mejor decisión para tu próxima configuración.</p>
+                <h4>Procesadores para Gaming</h4>
+                <p>Para gamers, recomendamos procesadores con alto rendimiento en un solo núcleo y frecuencias elevadas. Los últimos modelos de Intel Core i9 y AMD Ryzen 9 ofrecen un rendimiento excepcional para juegos de última generación.</p>
+                <h4>Procesadores para Workstations</h4>
+                <p>Si necesitas una estación de trabajo para renderizado 3D, edición de video o compilación de código, los procesadores con mayor número de núcleos como AMD Threadripper o Intel Xeon serán tu mejor opción.</p>
+                <h4>Mejor relación calidad-precio</h4>
+                <p>Para usuarios con presupuesto limitado, los procesadores de gama media como AMD Ryzen 5 o Intel Core i5 ofrecen un rendimiento excepcional sin vaciar tu bolsillo.</p>`
+},
+
         'articulo-2': {
             titulo: 'Tarjetas gráficas: ¿AMD o NVIDIA?',
             fecha: '10 de febrero, 2025',
