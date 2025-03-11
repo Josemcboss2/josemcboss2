@@ -24,6 +24,7 @@
     --dark-color: #f8f9fa;
     --text-color: #000000;
     --text-muted: #adb5bd;
+    --color: #000000;
     --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 body {
