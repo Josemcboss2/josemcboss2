@@ -111,25 +111,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const botonesLeerMas = document.querySelectorAll('.article-card .btn-outline-primary, .article-detailed .btn-primary');
     
     // Añadir event listeners a cada botón
-    botonesLeerMas.forEach((boton, index) => {
+    botonesLeerMas.forEach((boton) => {
         boton.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Identificar qué artículo se ha seleccionado
-            let articuloId;
-            if (index === 0) {
-                articuloId = 'articulo-1';
-            } else if (this.closest('.article-card').querySelector('h3').textContent.includes('AMD o NVIDIA')) {
-                articuloId = 'articulo-2';
-            } else if (this.closest('.article-card').querySelector('h3').textContent.includes('Refrigeración')) {
-                articuloId = 'articulo-3';
-            } else if (this.closest('.article-card').querySelector('h3').textContent.includes('SSD vs HDD')) {
-                articuloId = 'articulo-4';
-            } else if (this.closest('.article-card').querySelector('h3').textContent.includes('Overclocking')) {
-                articuloId = 'articulo-5';
-            } else if (this.closest('.article-card').querySelector('h3').textContent.includes('fuentes de poder')) {
-                articuloId = 'articulo-6';
-            }
+            // Usar un atributo data-id para identificar el artículo de manera más confiable
+            const articuloId = boton.getAttribute('data-id');
             
             // Si encontramos el artículo, mostrar el modal con su información
             if (articuloId && articulos[articuloId]) {
@@ -146,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-});
 
     // Check for saved theme preference or default to 'light'
     const savedTheme = localStorage.getItem('theme') || 'light';
@@ -178,3 +164,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
+});

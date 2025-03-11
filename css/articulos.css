@@ -1,4 +1,7 @@
-/* Estilos específicos para la página de artículos */
+ /* Estilos generales */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
 
 /* Encabezado de artículos */
 .articles-header {
@@ -12,7 +15,7 @@
     background-color: #2c3e50;
 }
 
-/* Estilos para artículos destacados */
+/* Artículos destacados */
 .featured-articles {
     padding: 40px 0;
     background-color: #f9f9f9;
@@ -23,6 +26,7 @@
     background-color: #333;
 }
 
+/* Artículo detallado */
 .article-detailed {
     background-color: #ffffff;
     border-radius: 8px;
@@ -35,6 +39,7 @@
     background-color: #2c3e50;
 }
 
+/* Títulos de los artículos detallados */
 .article-detailed h2 {
     font-size: 1.8rem;
     margin: 15px 0;
@@ -46,6 +51,7 @@
     color: #f8f9fa;
 }
 
+/* Imagen del artículo detallado */
 .article-detailed img {
     width: 100%;
     height: 400px;
@@ -53,6 +59,7 @@
     border-radius: 8px;
 }
 
+/* Fecha del artículo */
 .article-date {
     color: #6c757d;
     font-size: 0.9rem;
@@ -62,7 +69,7 @@
     gap: 5px;
 }
 
-/* Estilos para la lista de todos los artículos */
+/* Lista de todos los artículos */
 .all-articles {
     background-color: #f8f9fa;
     transition: background-color 0.3s;
@@ -72,6 +79,7 @@
     background-color: #2c3e50;
 }
 
+/* Tarjeta del artículo */
 .article-card {
     background-color: #ffffff;
     border-radius: 8px;
@@ -85,12 +93,14 @@
     background-color: #2c3e50;
 }
 
+/* Imagen de la tarjeta del artículo */
 .article-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
+/* Contenido de la tarjeta del artículo */
 .article-content {
     padding: 20px;
 }
@@ -174,7 +184,7 @@
     color: #f8f9fa;
 }
 
-/* Categoria de etiquetas para artículos */
+/* Categoría de etiquetas para artículos */
 .article-tags {
     display: flex;
     flex-wrap: wrap;
