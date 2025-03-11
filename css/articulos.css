@@ -44,7 +44,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-
+.lead text-center{
+    color: var(--primary-color)
+}
+[data-theme="dark"] .lead {
+    color: var(--light-color);
+}
 .section-title {
     position: relative;
     margin-bottom: 2rem;
@@ -320,4 +325,62 @@ h1, h2, h3, h4, h5, h6 {
     .article-content h3 {
         font-size: 1.1rem;
     }
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding-top: 60px;
+}
+
+.footer-info, .footer-links, .footer-contact {
+    margin-bottom: 30px;
+}
+
+.footer h3 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.footer h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.footer-slogan {
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    padding: 5px 0;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
 }

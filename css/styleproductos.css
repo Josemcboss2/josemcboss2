@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--primary-color);
 }
 
-/* Navbar estilos */
+/* Navbar Styles */
 #mainNav {
     background-color: var(--light-color);
     box-shadow: var(--box-shadow);
@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link:hover, .nav-link.active {
     color: var(--primary-color) !important;
 }
+
 
 /* Dark Mode Toggle */
 #darkModeToggle {

@@ -104,3 +104,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+  // Cambiar estilo del navbar al hacer scroll
+  const navbar = document.getElementById('mainNav');
+  if (navbar) {
+      window.addEventListener('scroll', function() {
+          if (window.scrollY > 50) {
+              navbar.classList.add('navbar-scrolled');
+          } else {
+              navbar.classList.remove('navbar-scrolled');
+          }
+      });
+  }
