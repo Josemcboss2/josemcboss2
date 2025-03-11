@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'articulo-3': {
             titulo: 'Refrigeración líquida vs. aire',
             fecha: '5 de febrero, 2025',
-            imagen: 'img/article-3.jpg',
+            imagen: 'https://lacasadelventilador.com.ar/wp-content/uploads/que-es-mejor-refrigeracion-liquida-o-por-aire-pc.webp',
             contenido: `<p>Ventajas y desventajas de cada sistema de refrigeración para tu PC gaming o workstation profesional.</p>
                         <h4>Refrigeración por aire</h4>
                         <p>Pros: Más económica, sin riesgo de fugas, menor mantenimiento.</p>
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'articulo-4': {
             titulo: 'SSD vs HDD: Guía definitiva de almacenamiento',
             fecha: '1 de febrero, 2025',
-            imagen: 'img/article-4.jpg',
+            imagen: 'https://www.lappymaker.com/blog/wp-content/uploads/2021/06/SSD-vs-HDD.png',
             contenido: `<p>Descubre las diferencias entre unidades de estado sólido y discos duros tradicionales para elegir el almacenamiento ideal para tu sistema.</p>
                         <h4>Velocidad de transferencia</h4>
                         <p>Los SSD son significativamente más rápidos, con velocidades de lectura/escritura que pueden ser hasta 10 veces superiores a los HDD tradicionales.</p>
